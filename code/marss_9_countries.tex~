@@ -1,0 +1,56 @@
+\begin{document}
+\begin{abstract}
+
+  As mortality evolves, there are underlying slow changes, which
+  cumulate over time, and there may also be transitory shocks. We can
+  use the Lee-Carter model to produce a time series of the level of
+  mortality over time. Then, we can compare models that include only
+  the slow change to those that also include transitory shocks. The
+  standard statistical model for transitory shocks  was designed for
+  normally-distributed observational error in every period. A future task would be to try
+  to fit a model aimed at modeling mortality shocks from epidimics,
+  which might not occur ever year, may be assymetric, and have heavier
+  tails. Applying the standard model, we can detect in some countries
+  evidence of a more slowly evolving trend. But the model does not
+  pick this up in countries like the United States, Russia, and
+  Germany.
+\end{abstract}
+
+  
+\section{Modeling}
+
+We first estimate the Lee-Carter model, adjusting $k_t$ to match
+$e_0$.
+
+Our model for estimating the latent $k_t$ has ``observation error''.
+
+\begin{equation}
+  k_t^{observed} = k_t^{latent} + n_t
+\end{equation}
+
+\begin{equation}
+  k_t^{latent} = k_{t-1}^{latent} + d + \epsilon_t
+\end{equation}
+
+The model has two features.
+\begin{itemize}
+  \item The observed value is the latent value plus ``noise'' $n_t$,
+    which is assumed to be normally distirubted with constant variance
+    and indpendent over $t$.
+
+  \item The latent value evolves as a random walk with drift, with a
+    fixed (deterministic) value of $d$.
+
+\end{itemize}
+
+\section{Results}
+
+In Figure \ref{kt_panel_fig} we show the observed and latent $k_t$ for
+9 countries in the Human Mortality Database. In some countries, such
+as the United States, Russia, and West Germany, the latent level of
+mortality is indistinguishable from the observed level. In the others, 
+latent value is clearly a smoother version of the observed $k_t$. The
+smoothing is particularly evident in France, Spain, and Sweden. Italy
+and Japan are intermediate cases.
+
+

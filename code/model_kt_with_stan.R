@@ -1,0 +1,119 @@
+## model kt with stan
+
+## we use latent model with drift
+
+## first we start with one country
+
+library(data.table)
+library(rstan)
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE)
+
+
+dt = fread("kt_dt.csv")
+y = dt$SWE
+n = length(y)
+
+compiled_model = stan_model(file = "model_kt.stan")
+
+stanData = list(n = n,
+                y = y)
+
+stanInit = function() {
+    list(
+        x = rnorm(n, mean = 0, sd = 10),
+        sigma_eps = abs(rnorm(1, 0,5)),
+        sigma_delta = abs(rnorm(1, 0,5)),
+        d = rnorm(1, mean = 0, sd = 10)
+    )
+}
+
+fit = sampling(object = compiled_model,
+               data = stanData,
+               init = stanInit,
+               iter = 5000,
+               warmup = 500,
+               chains = 2,
+               control = list(adapt_delta = .99,
+                              stepsize = .05,
+                              max_treedepth=15))
+
+print(fit, c("d", "sigma_eps", "sigma_obs"))
+
+##            mean se_mean   sd  2.5%   25%   50%   75% 97.5% n_eff Rhat
+## d         -1.72    0.00 0.15 -2.03 -1.82 -1.72 -1.62 -1.42 10923    1
+## sigma_eps  1.21    0.01 0.21  0.85  1.06  1.19  1.34  1.69  1778    1
+## sigma_obs  0.98    0.00 0.19  0.60  0.87  0.99  1.11  1.35  1442    1
+
+## compare to sd(innovations) in non-latent model
+kt = y
+n = length(y)
+d = (y[n] - y[1])/(n-1)
+eps_obs = diff(kt) - d
+sd(eps_obs)
+
+## [1] 1.874124 (muhc bigger than 1.21) -- interesting question is how
+## latent sigma and sigma of noise combine to give sd(eps_obs)
+
+
+## plot the observed kt and the latent
+
+x.mat = as.matrix(fit, "x")
+x_mean = apply(x.mat, 2, mean)
+year = 1950:2013
+plot(year, kt, type = 'l')
+lines(year, x_mean, lty = 1, col = "red", lwd = 3)
+## ok, looks fine.
+
+########### let's do USA
+y = dt$USA
+n = length(y)
+stanData = list(n = n,
+                y = y)
+fit = sampling(object = compiled_model,
+               data = stanData,
+               init = stanInit,
+               iter = 5000,
+               warmup = 500,
+               chains = 2,
+               control = list(adapt_delta = .99,
+                              stepsize = .05,
+                              max_treedepth=15))
+print(fit, c("d", "sigma_eps", "sigma_obs"))
+
+
+## compare to sd(innovations) in non-latent model
+kt = y
+n = length(y)
+d = (y[n] - y[1])/(n-1)
+eps_obs = diff(kt) - d
+sd(eps_obs)
+
+## [1] 1.874124 (muhc bigger than 1.21) -- interesting question is how
+## latent sigma and sigma of noise combine to give sd(eps_obs)
+
+
+## plot the observed kt and the latent
+
+x.mat = as.matrix(fit, "x")
+x_mean = apply(x.mat, 2, mean)
+year = 1950:2013
+plot(year, kt, type = 'l')
+lines(year, x_mean, lty = 1, col = "red", lwd = 3)
+lines(year, kt, type = 'l')
+## super small observation variance
+
+##################################### joint model of everyone but Russia ###
+
+## we'll draw sigma_obs from a normal distribution
+## and sigma_eps too
+
+## data will be Y[i,j]
+
+## [1] "DEUTW"   "ESP"     "FRATNP"  "GBRTENW" "ITA"     "JPN"     "RUS"
+## [8] "SWE"     "USA"
+mydt <- dt[, .(DEUTW, ESP, FRATNP, GBRTENW, ITA, JPN, SWE, USA)]
+Y <- as.matrix(mydt)
+
+## dim(Y)
+## [1] 64  8

@@ -1,0 +1,178 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.23)  24 SEP 2020 19:39
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**goldstein_lee_modern_mortality_shocks_paa_proposal_2.tex
+(./goldstein_lee_modern_mortality_shocks_paa_proposal_2.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-09-06>
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
+f
+File: l3backend-pdftex.def 2020-09-11 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count176
+\l__pdf_internal_box=\box45
+) (./goldstein_lee_modern_mortality_shocks_paa_proposal_2.aux)
+\openout1 = `goldstein_lee_modern_mortality_shocks_paa_proposal_2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
+y
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/Users/josh/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+ [1
+
+{/Users/josh/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 85.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 85.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 85.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 91.
+[2] [3]
+<../code/france_example.pdf, id=24, 433.62pt x 433.62pt>
+File: ../code/france_example.pdf Graphic file (type pdf)
+<use ../code/france_example.pdf>
+Package pdftex.def Info: ../code/france_example.pdf  used on input line 182.
+(pdftex.def)             Requested size: 409.50119pt x 409.52164pt.
+
+Overfull \hbox (19.50119pt too wide) in paragraph at lines 182--186
+[][] 
+ []
+
+[4] [5 <../code/france_example.pdf>]
+<../code/kt_panel_plot.pdf, id=38, 722.7pt x 867.24pt>
+File: ../code/kt_panel_plot.pdf Graphic file (type pdf)
+<use ../code/kt_panel_plot.pdf>
+Package pdftex.def Info: ../code/kt_panel_plot.pdf  used on input line 199.
+(pdftex.def)             Requested size: 409.50119pt x 491.40746pt.
+
+Overfull \hbox (19.50119pt too wide) in paragraph at lines 199--204
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 13.24077pt on input line 206.
+
+<./../code/nt_panel_plot.pdf, id=39, 722.7pt x 867.24pt>
+File: ./../code/nt_panel_plot.pdf Graphic file (type pdf)
+<use ./../code/nt_panel_plot.pdf>
+Package pdftex.def Info: ./../code/nt_panel_plot.pdf  used on input line 218.
+(pdftex.def)             Requested size: 409.50119pt x 491.40746pt.
+
+Overfull \hbox (19.50119pt too wide) in paragraph at lines 218--222
+[][] 
+ []
+
+<./../code/nt_corr_plot.pdf, id=40, 867.24pt x 867.24pt>
+File: ./../code/nt_corr_plot.pdf Graphic file (type pdf)
+<use ./../code/nt_corr_plot.pdf>
+Package pdftex.def Info: ./../code/nt_corr_plot.pdf  used on input line 255.
+(pdftex.def)             Requested size: 409.50119pt x 409.50842pt.
+
+Overfull \hbox (19.50119pt too wide) in paragraph at lines 255--261
+[][] 
+ []
+
+[6] [7 <../code/kt_panel_plot.pdf>] [8 <./../code/nt_panel_plot.pdf>] [9 <./../
+code/nt_corr_plot.pdf>] [10]
+(./goldstein_lee_modern_mortality_shocks_paa_proposal_2.aux) ) 
+Here is how much of TeX's memory you used:
+ 908 strings out of 482799
+ 14912 string characters out of 5954347
+ 250966 words of memory out of 5000000
+ 16329 multiletter control sequences out of 15000+600000
+ 540756 words of font info for 48 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,8n,33p,502b,209s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/josh/Lib
+rary/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></Users/josh/
+Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/jo
+sh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users
+/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Us
+ers/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+17.pfb></Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb></Users/josh/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt12.pfb>
+Output written on goldstein_lee_modern_mortality_shocks_paa_proposal_2.pdf (10 
+pages, 272246 bytes).
+PDF statistics:
+ 122 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

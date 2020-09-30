@@ -1,0 +1,19 @@
+data {
+  int<lower=1> n;
+  vector[n] y;
+}
+parameters {
+  vector[n] x0_mu; // initial state
+  real<lower=0> sigma; // SD of innovation epsilon_t (or q in MARSS)
+  real d; // drift
+}
+transformed parameters {
+  vector[n] yhat; // not sure what this is for
+  yhat = mu;
+}
+model {
+  for(t in 2:n) // random_walk on mu_t with SD of level
+    mu[t] ~ normal(mu[t-1], sigma_level);
+  // not quite sure why we need separate equation here, but does no harm and imitates structure of model
+  y ~ normal(yhat, sigma_irreg); // y ~ mu + et, vectorized
+}
